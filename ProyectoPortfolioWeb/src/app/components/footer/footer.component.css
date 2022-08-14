@@ -1,0 +1,18 @@
+* {
+    margin: auto;
+    background-color: #6a82a8;
+}
+
+footer {
+    display: inline-block;
+    box-shadow: 0 -10px 50px #6a82a8; 
+    text-align: center;
+}
+
+#nombre {
+    margin-top: 25px;
+}
+
+#ciudad {
+    margin-bottom: 25px;
+}

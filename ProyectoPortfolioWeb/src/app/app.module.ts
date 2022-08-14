@@ -8,6 +8,13 @@ import { LogoArgProgComponent } from './components/logo-arg-prog/logo-arg-prog.c
 import { RedesComponent } from './components/redes/redes.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeMiComponent } from './components/acerca-de-mi/acerca-de-mi.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -17,10 +24,16 @@ import { AcercaDeMiComponent } from './components/acerca-de-mi/acerca-de-mi.comp
     RedesComponent,
     BannerComponent,
     AcercaDeMiComponent,
+    ExperienciaComponent,
+    EducacionComponent,
+    SkillsComponent,
+    ProyectosComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]

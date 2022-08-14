@@ -1,3 +1,42 @@
+/* Clase row */
+.row {
+    padding: 5%;
+}
+
+/* Etiquetas div */
 div {
     background-color: #98b9ee;
+    text-align: center;
+    margin: auto;
+}
+
+/* Etiqueta foto*/
+img {
+    border-radius: 50%;
+}
+
+/* Etiqueta nombre */
+#nombre {
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Etiqueta nombre */
+#subtitulo-nombre {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/* Etiqueta acerca de mi (título) */
+#acercademi-titulo {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Etiqueta acerca de mi (párrafo) */
+#acercademi-parrafo {
+    margin-left: 5%;
+    margin-right: 5%;
 }
