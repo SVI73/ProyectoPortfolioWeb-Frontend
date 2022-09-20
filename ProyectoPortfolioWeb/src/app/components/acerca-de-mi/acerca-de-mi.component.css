@@ -1,3 +1,7 @@
+* {
+    margin: auto;
+}
+
 /* Clase row */
 .row {
     padding: 5%;
@@ -7,7 +11,6 @@
 div {
     background-color: #98b9ee;
     text-align: center;
-    margin: auto;
 }
 
 /* Etiqueta foto*/

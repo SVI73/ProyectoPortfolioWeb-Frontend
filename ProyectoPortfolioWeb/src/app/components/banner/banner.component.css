@@ -1,7 +1,8 @@
-#banner {
-    width: 100%;
+.row {
+    display: flex;
+    background-color: white;
 }
 
-#titulo, #tecnologias {
-    text-align: center;
+img {
+    width: 100%
 }

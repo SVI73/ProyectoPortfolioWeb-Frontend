@@ -1,5 +1,135 @@
-img {
-    width: 200px;
+.row {
+    height: 100px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#logo-arg-prog, #logo-ministerio {
+    height: 80px;
+}
+
+#facebook, #instagram, #linkedin, #github, #email, #whatsapp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-inline: 5px;
+}
+
+.btn {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+
+/* PARA PANTALLAS DE MAX 855px DE ANCHO */
+@media (max-width: 876px) {
+    .row {
+        display: flex;
+        align-items: center;
+        height: 200px;
+    }
+    
+    .container {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+/* PARA PANTALLAS DE MAX 440px DE ANCHO */
+@media (max-width: 481px) {
+    .btn {
+        margin-top: 0.5em;
+    }
+
+    #logo-ministerio, #logo-arg-prog {
+        height: 65px;
+    }
+}
+
+/* PARA PANTALLAS DE MAX 321px DE ANCHO */
+@media (max-width: 362px) {
+    .row {
+        height: 250px;
+    }
+}
+
+/* PARA PANTALLAS DE MAX 280px DE ANCHO */
+@media (max-width: 280px) {
+    .row {
+        height: 300px;
+    }
+}
+
+
+
+/*
+.container {
+    margin: auto;
+    display: flex;
+}
+
+.logo-ap {
+    
+    width: 100px;
     margin-right: 10px;
 }
 
+.redes {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+*/
+
+
+
+
+
+
+
+
+/*
+
+}
+
+.row {
+    height: 120px;
+}
+
+#logo-arg-prog, #logo-ministerio {
+    display: flex;
+    margin-top: 5px;
+    float: left;
+    height: 80px;
+}
+
+#facebook, #instagram, #linkedin, #github, #email, #whatsapp {
+    display: inline-block;
+    margin-top: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: right;
+}
+
+.btn {
+    display: flex;
+    float: right;
+    margin-top: 26px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+*/

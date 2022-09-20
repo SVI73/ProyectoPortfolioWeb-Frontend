@@ -1,9 +1,6 @@
-* {
-    margin: auto;
-}
-
 .row {
     background-color: #98b9ee;
     padding: 100px;
     text-align: center;
+    margin: auto;
 }
