@@ -11,7 +11,8 @@
       <a href=""><img src="../../../assets/logo-linkedin.png" id="linkedin" /></a>
       <a href=""><img src="../../../assets/logo-instagram.png" id="instagram"/></a>
       <a href=""><img src="../../../assets/logo-fb.png" id="facebook" /></a>
-      <button type="button" class="btn btn-light" id="boton" (click)="login()">Login</button>
+      <button type="button" class="btn btn-light" id="boton" (click)="login()" *ngIf="!isLogged">Login</button>
+      <button type="button" class="btn btn-light" id="boton" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesión</button>
     </div>
   </div>
 </div>
