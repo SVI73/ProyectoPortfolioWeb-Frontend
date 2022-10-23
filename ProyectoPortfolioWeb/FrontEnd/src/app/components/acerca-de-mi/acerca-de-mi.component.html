@@ -1,7 +1,12 @@
 <div class="row">
+  <button type="button" class="btn btn-primary" routerLink="/editacercademi/1" *ngIf="isLogged">
+    <i class="bi bi-pencil-square"></i> Editar persona
+  </button>
+
   <div class="col-md-4">
-    <img src="../../../assets/foto.jpeg" class="img-fluid" />
+    <img src="{{persona.img}}" class="img-fluid" />
   </div>
+
   <div class="col-md-8">
     <div class="pb-3">
       <h2 id="nombre">{{persona.nombre}} {{persona.apellido}}</h2>
@@ -10,11 +15,8 @@
     <div class="row">
       <span>
         <h3 id="acercademi-titulo">Acerca de mí</h3>
-        <p id="acercademi-parrafo">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. At nobis
-          enim, magni quidem omnis labore perspiciatis aut facilis amet dolor ad
-          laborum tenetur dolore. Quae repellendus beatae delectus corrupti
-          voluptate?
+        <p id="acercademi-desc">
+          {{persona.descripcion}}
         </p>
       </span>
     </div>

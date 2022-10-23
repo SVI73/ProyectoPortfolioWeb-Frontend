@@ -32,7 +32,6 @@ public class Rol {
     }
     
     //Getters y Setters
-
     public int getId() {
         return id;
     }
