@@ -1,3 +1,7 @@
+div {
+    font-family: 'Montserrat';
+}
+
 .row {
     background-color: #98b9ee;
     padding: 20px;
@@ -8,4 +12,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
 }

@@ -10,6 +10,8 @@
 /* Etiquetas div */
 div {
     background-color: #98b9ee;
+    font-family: 'Montserrat';
+    font-weight: bold;
     text-align: center;
 }
 
@@ -34,6 +36,8 @@ img {
 
 /* Etiqueta acerca de mi (título) */
 #acercademi-titulo {
+    font-weight: bold;
+    font-size: 30px;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -42,4 +46,8 @@ img {
 #acercademi-parrafo {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+button {
+    width: 200px;
 }

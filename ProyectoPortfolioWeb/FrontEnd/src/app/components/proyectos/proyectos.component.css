@@ -2,7 +2,20 @@
     background-color: #98b9ee;
 }
 
+div {
+    font-family: 'Montserrat';
+}
+
 .row {
     padding: 5%;
     margin: auto;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h4 {
+    font-weight: bold;
 }
