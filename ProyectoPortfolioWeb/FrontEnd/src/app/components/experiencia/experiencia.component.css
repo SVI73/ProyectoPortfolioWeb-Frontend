@@ -6,7 +6,24 @@
 }
 
 h2 {
+    display: inline-block;
     font-weight: bold;
     font-size: 40px;
+}
+
+#nuevaexperiencia {
+    margin-left: 10px;
+}
+
+
+.tarjetas {
+    display: contents;
+    align-items: center;
+}
+
+.card {
+    width: 260px;
+    height: 210px;
+    margin: auto;
 }
 

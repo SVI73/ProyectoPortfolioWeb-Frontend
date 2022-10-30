@@ -4,7 +4,7 @@ div {
 
 .row {
     background-color: #98b9ee;
-    padding: 20px;
+    padding: 10%;
     margin: auto;
 }
 
@@ -15,6 +15,11 @@ div {
 }
 
 h2 {
+    display: inline-block;
     font-weight: bold;
     font-size: 40px;
+}
+
+#nuevoskill {
+    margin-left: 10px;
 }

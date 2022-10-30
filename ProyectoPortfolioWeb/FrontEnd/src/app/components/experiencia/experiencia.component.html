@@ -1,75 +1,26 @@
 <div class="row">
-  <div>
-    <h2>Experiencia laboral</h2>
-  </div>
-  <div class="col-lg-2">
-    <button type="button" class="btn btn-success" routerLink="/nuevaexp" *ngIf="isLogged">
+  <div class="col-lg-12">
+    <h2>Experiencias laborales</h2>
+    <button type="button" class="btn btn-success" routerLink="/nuevaexp" *ngIf="isLogged" id="nuevaexperiencia">
       <i class="bi bi-plus-square"></i> Nueva experiencia
     </button>
   </div>
 
-  <div class="col-lg-1"></div>
-  <div class="col-lg-11">
-    <table class="table">
-      <tbody>
-        <tr *ngFor="let Experiencia of exp">
-          <td><h3>{{Experiencia.nombreE}}</h3></td>
-          <td>{{Experiencia.descripcionE}}</td>
-          <td *ngIf="isLogged">
-            <button class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}">
-              <i class="bi bi-pencil-square"></i> Editar
-            </button>
-          </td>
-          <td *ngIf="isLogged">
-            <button class="btn btn-danger" (click)="delete(Experiencia.id)">
-              <i class="bi bi-file-earmark-x"></i> Eliminar
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
 
-<!---------------------------
-  
-<div class="row">
-  <div>
-    <h2>Experiencia laboral</h2>
+  <div class="col-lg-4 col-md-6 col-sm-12 tarjetas">
+    <div class="card border-light mb-3" style="max-width: 18rem;" *ngFor="let Experiencia of exp">
+      <div class="card-header">
+        {{Experiencia.nombreE}}
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{Experiencia.descripcionE}}</p>
+      </div>
+      <button class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
+        <i class="bi bi-pencil-square"></i> Editar
+      </button>
+      <button class="btn btn-danger" (click)="delete(Experiencia.id)" *ngIf="isLogged">
+        <i class="bi bi-file-earmark-x"></i> Eliminar
+      </button>
+    </div>
   </div>
-  <div class="col-lg-1"></div>
-  <div class="col-lg-10">
-    <ul>
-      <li>
-        <h4>Trabajo 1</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
-          dolorum laudantium deserunt ipsa culpa necessitatibus, voluptatum
-          neque consequatur quos exercitationem fugiat libero modi voluptate,
-          cum quis placeat iste. Suscipit, delectus!
-        </p>
-      </li>
-      <li>
-        <h4>Trabajo 2</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
-          dolorum laudantium deserunt ipsa culpa necessitatibus, voluptatum
-          neque consequatur quos exercitationem fugiat libero modi voluptate,
-          cum quis placeat iste. Suscipit, delectus!
-        </p>
-      </li>
-      <li>
-        <h4>Trabajo 3</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
-          dolorum laudantium deserunt ipsa culpa necessitatibus, voluptatum
-          neque consequatur quos exercitationem fugiat libero modi voluptate,
-          cum quis placeat iste. Suscipit, delectus!
-        </p>
-      </li>
-    </ul>
-  </div>
-  <div class="col-lg-1"></div>
 </div>
-  
-  ------------------------------------->
