@@ -1,10 +1,10 @@
-<section class="vh-100" style="background-color: #98b9ee" *ngIf="skill">
+<section class="vh-100" style="background-color: #98b9ee" *ngIf="proyecto">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
           <div class="card shadow-2-strong" style="border-radius: 1rem">
             <div class="card-body p-5 text-center">
-              <h3 class="mb-5">Editar una habilidad</h3>
+              <h3 class="mb-5">Editar un proyecto</h3>
   
               <form #f="ngForm" (ngSubmit)="onUpdate()" novalidate>
                 <div class="form-outline mb-4">
@@ -13,27 +13,40 @@
                     id="nombre"
                     name="nombre"
                     class="form-control form-control-lg"
-                    [(ngModel)]="skill.nombre"
+                    [(ngModel)]="proyecto.nombre"
                     required
                   />
-                  <label class="form-label" for="nombre">Nombre de la habilidad</label>
+                  <label class="form-label" for="nombre">Nombre del proyecto</label>
                 </div>
   
                 <div class="form-outline mb-4">
                   <input
                     type="text"
-                    id="porcentaje"
-                    name="porcentaje"
+                    id="descripcion"
+                    name="descripcion"
                     class="form-control form-control-lg"
-                    [(ngModel)]="skill.porcentaje"
+                    [(ngModel)]="proyecto.descripcion"
                   />
-                  <label class="form-label" for="porcentaje"
-                    >Descripción de la habilidad</label
+                  <label class="form-label" for="descripcion"
+                    >Descripción del proyecto</label
                   >
                 </div>
+
+                <div class="form-outline mb-4">
+                    <input
+                      type="text"
+                      id="url"
+                      name="url"
+                      class="form-control form-control-lg"
+                      [(ngModel)]="proyecto.url"
+                    />
+                    <label class="form-label" for="url"
+                      >URL del proyecto</label
+                    >
+                  </div>
   
                 <button class="btn btn-primary btn-lg btn-block" type="submit">
-                  Actualizar habilidad
+                  Actualizar proyecto
                 </button>
               </form>
             </div>

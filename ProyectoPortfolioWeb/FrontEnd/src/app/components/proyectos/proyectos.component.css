@@ -1,21 +1,29 @@
-* {
-    background-color: #98b9ee;
-}
-
-div {
-    font-family: 'Montserrat';
-}
-
 .row {
+    font-family: 'Montserrat';
     padding: 10%;
+    background-color: #98b9ee;
     margin: auto;
 }
 
 h2 {
+    display: inline-block;
     font-weight: bold;
     font-size: 35px;
 }
 
-h4 {
-    font-weight: bold;
+#nuevoproyecto {
+    margin-left: 10px;
 }
+
+
+.tarjetas {
+    display: contents;
+    align-items: center;
+}
+
+.card {
+    width: 260px;
+    height: 210px;
+    margin: auto;
+}
+

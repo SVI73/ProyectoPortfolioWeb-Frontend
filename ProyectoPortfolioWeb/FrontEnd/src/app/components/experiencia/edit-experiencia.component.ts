@@ -14,7 +14,8 @@ export class EditExperienciaComponent implements OnInit {
   constructor(
     private sExperiencia: SExperienciaService,
     private activatedRouter: ActivatedRoute,
-    private router: Router) { }
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
