@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '88609024535',
   },
   production: true,
-  URL: 'https://backendportfolioeib.herokuapp.com/'
+  URL: 'https://proyectoportfolioweb-backend-production.up.railway.app/'
 };
